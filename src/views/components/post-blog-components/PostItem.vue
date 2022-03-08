@@ -36,7 +36,7 @@ export default {
 .post-title {
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
+  padding-left: 15px;
 }
 
 .post-body {

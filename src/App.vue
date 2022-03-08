@@ -1,18 +1,18 @@
 <template>
-  <nav>
-    <router-link style="margin-right: 5px;" to="/">Home</router-link>
-    <router-link to="/about">Post blog</router-link>
-  </nav>
+  <div class="app">
+    <navbar/>
+  </div>
 <router-view/>
 
 </template>
 <script>
 import PostList from "@/views/components/post-blog-components/PostList";
 import PostForm from "@/views/components/post-blog-components/PostForm";
+import Navbar from "@/views/components/navbar/Navbar"
 
 export default {
   components: {
-    PostForm, PostList
+    PostForm, PostList, Navbar
   },
   data: function () {
     return {
@@ -35,8 +35,10 @@ export default {
 }
 </script>
 <style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.app {
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

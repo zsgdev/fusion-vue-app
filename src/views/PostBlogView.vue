@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="post-blog">
     <post-form @create="createPost($event)" />
     <post-list :posts="posts"/>
   </div>
@@ -32,3 +32,8 @@ export default {
 
 }
 </script>
+<style scoped>
+.post-blog {
+  font-family: 'Roboto', sans-serif;
+}
+</style>
