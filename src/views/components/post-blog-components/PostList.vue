@@ -12,7 +12,7 @@
   </div>
 </template>
 <script>
-import PostItem from "@/views/components/PostItem";
+import PostItem from "@/views/components/post-blog-components/PostItem";
 
 export default {
   components: {

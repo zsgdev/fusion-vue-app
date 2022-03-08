@@ -1,10 +1,8 @@
 <template>
-  <nav>
-    <router-link style="margin-right: 5px;" to="/">Home</router-link>
-    <router-link to="/about">Post blog</router-link>
-  </nav>
-<router-view/>
-
+  <div>
+    <post-form @create="createPost($event)" />
+    <post-list :posts="posts"/>
+  </div>
 </template>
 <script>
 import PostList from "@/views/components/post-blog-components/PostList";
@@ -34,25 +32,3 @@ export default {
 
 }
 </script>
-<style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
