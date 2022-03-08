@@ -1,14 +1,11 @@
 <template>
-  <div class="#app">
-
-  </div>
   <nav>
-    <router-link to="/">Home</router-link>
+    <router-link style="margin-right: 5px;" to="/">Home</router-link>
     <router-link to="/about">About</router-link>
   </nav>
   <!--  <router-view/>-->
   <div>
-    <post-form/>
+    <post-form @create="createPost($event)" />
     <post-list :posts="posts"/>
   </div>
 </template>
@@ -31,6 +28,12 @@ export default {
       ]
     }
   },
+  methods: {
+    createPost(post) {
+      console.log(post)
+      this.posts.push(post)
+    }
+  }
 
 }
 </script>

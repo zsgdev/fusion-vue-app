@@ -28,13 +28,12 @@ export default {
   },
   methods: {
     createPost() {
-      const newPost = {
-        title: this.title,
-        body: this.body,
+      this.post.id = Date.now()
+      this.$emit('create', this.post)
+      this.post = {
+        title:'',
+        body:''
       }
-      this.posts.push(newPost)
-      this.title = ''
-      this.body = ''
     },
   }
 }

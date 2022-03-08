@@ -1,52 +1,31 @@
 <template>
   <div>
-    <div class="post" v-for="post in posts">
-      <div class="post-title">
-        {{ post.title }}
-      </div>
-      <div class="post-body">
-        {{ post.body }}
-      </div>
+    <h3>
+      Список пользователей
+    </h3>
+    <div>
+      <post-item
+          :post="post"
+          v-for="post in posts"
+      />
     </div>
   </div>
 </template>
 <script>
+import PostItem from "@/views/components/PostItem";
+
 export default {
+  components: {
+    PostItem
+  },
   props: {
     posts: {
       type: Array,
       required: true
     }
-  },
-  name: 'post-list',
-  data: function () {
-    return {
-
-    }
   }
 }
 </script>
 <style scoped>
-.post {
-  display: flex;
-  padding: 15px;
-  border: 5px solid teal;
-  border-radius: 10px;
-  margin-top: 55px;
-  flex-direction: column;
-}
 
-.post-title {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.post-body {
-  margin-top: 25px;
-  border:1px solid seagreen;
-  height: 50px;
-  padding-left: 15px;
-  padding-top: 15px;
-}
 </style>
