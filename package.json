@@ -1,6 +1,6 @@
 {
   "homepage" : "https://zsgdev.github.io/ulbi-vue-app/",
-  "name": "ulbi-app",
+  "name": "ulbi-vue-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {

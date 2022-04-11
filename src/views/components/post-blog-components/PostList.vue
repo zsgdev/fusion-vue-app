@@ -6,7 +6,8 @@
     <div>
       <post-item
           :post="post"
-          v-for="post in posts"
+          v-for="(post, idx) in posts"
+          :key=idx
       />
     </div>
   </div>

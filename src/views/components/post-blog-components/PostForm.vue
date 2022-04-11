@@ -43,19 +43,13 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  text-align: center;
+  background: cadetblue;
 }
 
 .input {
-  width: 100%;
-  border: 1px solid teal;
-  padding: 10px 15px;
-  margin: 15px;
-  border-radius: 4px;
-}
-
-.input {
-  width: 100%;
-  border: 1px solid teal;
+  width: 30%;
+  border: 3px solid darkcyan;
   padding: 10px 15px;
   margin: 15px;
   border-radius: 4px;
@@ -65,11 +59,12 @@ export default {
   align-self: center;
   padding: 10px 15px;
   width: 300px;
-  color: teal;
-  background: none;
+  color: white;
+  background: darkcyan;
   border: 1px solid teal;
   border-radius: 8px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .button:hover {

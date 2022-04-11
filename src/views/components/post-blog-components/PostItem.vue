@@ -42,8 +42,10 @@ export default {
 .post-body {
   margin-top: 25px;
   border:1px solid seagreen;
+  border-radius: 10px;
   height: 50px;
   padding-left: 15px;
   padding-top: 15px;
+  background-color: darkcyan;
 }
 </style>

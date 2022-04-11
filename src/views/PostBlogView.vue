@@ -29,6 +29,7 @@ export default {
       this.posts.push(post)
     }
   }
+    
 
 }
 </script>
